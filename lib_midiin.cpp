@@ -92,7 +92,7 @@ void MidiIn::process ( std::vector< unsigned char > *message ) {
         int b3 = (int)message->at(3);
         int bl = (int)message->at(size-1);
         
-        if (b0==240 && b1==0 && b2==32 && b3==119 && bl==247) {//SYSEX_HEAD
+        if (b0==240 && b1==0 && b2==33 && b3==02 && bl==247) {//SYSEX_HEAD
             unsigned char *msg = new unsigned char[size];
             for (int i=0; i<size;i++)
                 msg[i]= message->at(i);

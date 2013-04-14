@@ -19,7 +19,7 @@
 #include "lib_midi.h"
 
 // ******************************************
-const unsigned char Midi::sysexHead[6]={240,0,32,119,0,2};
+const unsigned char Midi::sysexHead[6]={240,0,33,02,0,2};
 // ******************************************
 
 
